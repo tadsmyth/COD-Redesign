@@ -4,6 +4,12 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
 		<title>Dallas Water Utilities Department</title>
+<!-- Google font import links -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
 		<style type="text/css">
 		
 		body{
@@ -12,7 +18,7 @@
 			overflow: hidden;
 			height: 100%; 
 			max-height: 100%; 
-			font-family:Sans-serif;
+			font-family:'Montserrat',Sans-serif;
 			line-height: 1.5em;
 		}
 		
@@ -38,7 +44,8 @@
 		}
 		
 		.innertube{
-			margin: 15px; /* Provides padding for the content */
+			margin: 3% 7% 3% 7%; /* Provides padding for the content */
+			/* Modified margin to be responsive using percentages - TadS */
 		}
 		
 		p {
@@ -79,6 +86,8 @@
 				
 <!--Document Table Header-->
 
+
+<!-- Why does the document header have to be on the website? Is the site itself a document with a revision num and all that? - TadS -->
 <p>
 <table border="2" width="100%" bordercolor="#000000" cellpadding="2">
 <tr>
@@ -129,7 +138,9 @@ padding:5mm;
 </style>
 
 <!-- HTML Code -->
-<marquee class="GeneratedMarquee" direction="left" scrollamount="4" behavior="scroll">Q4 DMRs Due October 25th.</marquee>
+
+<!-- Recomend removing marquee as it is a deprecated element and could lose browser support - TadS -->
+<marquee class="GeneratedMarquee" direction="left" scrollamount="4" behavior="scroll">Q4 DMRs Due October 25th 2019</marquee>
 
 </p>
 
@@ -137,8 +148,8 @@ padding:5mm;
 SCOPE OF SERVICES AT DALLAS WATER UTILITIES</b><br>
 QMS – Provide water and wastewater services, that meet the regulatory requirements in the State of Texas, to our customers<br>
 EMS – The environmental activities and supporting processes associated with providing water and wastewater services in adherence to regulatory compliance<br>
-OHS – The occupational health and safety activities and supporting processes associated with providing water and wastewater services<br>  
-Note: There are no exclusions to QMS, EMS and OHS Scope     
+OHS – The occupational health and safety activities and supporting processes associated with providing water and wastewater services<br>
+Note: There are no exclusions to QMS, EMS and OHS Scope
 </p>
 
 			<!--Document Link Table-->
@@ -207,10 +218,10 @@ Environmental Management Programs Procedures</a></li>
 <!--Column 2-->
 
    
-<td valign="top" align="left" width="50%"><b>Dallas Water Utilities Department Wide Documents</b><br><br>
+<td valign="top" align="left" width="50%"><b>Dallas Water Utilities Department Wide Documents</b><br>
 
 
-<p>General</p>
+<h3>General</h3>
 
 <ul>
 <li><a href="Forms/DWU-FRM-040_DWUFleetOperationsChecklist.doc">DWU Daily Fleet Operations Checklist</a></li>
@@ -522,3 +533,7 @@ In some cases, product realization activities (defining product objectives, esta
 	
 	</body>
 </html>
+
+
+<!-- The code after closing body tag (ln 468) is ineffective as there is no opening <body> and no need for it. Reccomend deletion or commenting out -->
+	

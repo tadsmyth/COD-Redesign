@@ -3,6 +3,9 @@ Body {
   
 }
 
+
+/* The <p> classes are redundant and likely will be removed. Remove these in favor of using BS methods of alignment rather than PX */
+/* PXs could be chnaged to percent or rem to be more responsive */
 p {
   text-align: left;
   margin-left: 20px;
