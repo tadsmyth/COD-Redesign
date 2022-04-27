@@ -56,7 +56,13 @@
 			/* Modified margin to be responsive using percentages - TadS */
 		}
 		
-		
+		td {
+			padding: 1%;
+		}
+
+		a:hover {
+			color: green;
+		}
 
 		nav ul {
 			list-style-type: none;
@@ -78,6 +84,33 @@
 			height: 100%; 
 			width: 100%; 
 		}
+
+
+
+
+/* attempt at a hover transition animation - Tad S. */
+							.link {
+					position: relative;
+					transition: clip-path 275ms ease; 
+					&:hover span::before, &:focus span::before {
+						clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+					}
+					span {
+						position: relative;
+						display: inline-block;
+						color: $blue;
+						&::before {
+						position: absolute;
+						content: attr(data-content);
+						color: $darkblue;
+						text-decoration: underline;
+						text-decoration-color: $darkblue;
+						clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+						transition: clip-path 275ms ease;
+						}
+					}
+				}
+
 
 		</style>
 		
@@ -172,7 +205,7 @@ padding:5mm;
 <td valign="top" width="50%"><strong>City of Dallas (COD) Procedures/Processes</strong>
 
 <ul>
-<li><a href="http://www.cod/Directives/pdf/AD6-14.pdf">Asbestos-Containing Material in Buildings (AD 6-14)</a></li>
+<li><a class="link" href="http://www.cod/Directives/pdf/AD6-14.pdf">Asbestos-Containing Material in Buildings (AD 6-14)</a></li>
 <li><a href="http://www.cod/Oeq/pdf/CalibrationProcedure_rev01.pdf">Calibration Procedure</a></li>
 <li><a href="http://www.cod/EBS/pdfs/Keycard-IDAccessRequest.pdf">COD Identification and Access Card Request Form</a></li>
 <li><a href="https://dallastxgov.sharepoint.com/sites/city/4eval/SitePages/Department.aspx">COD Quality, Environmental and Occupational Health &amp; Safety Management System Manual</a></li>
